@@ -55,7 +55,7 @@ export function Footer () {
         <div className='footer'>
             <h2>PineTwist</h2>
             <div className='contact-info'>
-                <span>233 49494949494</span>
+                <span>+233 49494949494</span>
                 <span>penny@gmail.com</span>
                 <span> Kumasi, Ghana</span>
             </div>
