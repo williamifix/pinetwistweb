@@ -22,6 +22,7 @@ export function Navbar (){
         window.addEventListener('resize', updateScreenMode);
         return () => {
             window.removeEventListener('resize', updateScreenMode);
+            setToggleNav(false)
         };
     }, []);
 
@@ -38,10 +39,11 @@ export function Navbar (){
             </div>
 
             <div className="user-action-icons">
+                                <span><FaCartShopping/></span>
+
                 {screenMode==='small'?<span ><FaBars onClick={()=>{if(screenMode==='small'){setToggleNav(!toggleNav)}}}/></span> : null}
                 {screenMode==='large'?<span ><FaCircleUser/></span> : null}
                 {/* <span><FaCircleUser/></span> */}
-                {/* <span><FaCartShopping/></span> */}
             </div>
 
         </div>
